@@ -3,8 +3,6 @@
 
 ## Creating a Django project & App
 
-[Github](https://github.com/yiweijiang/django-heroku-aws-s3)
-
 [django-tutorial](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)
 
 Follow this:
