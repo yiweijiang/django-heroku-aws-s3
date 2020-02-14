@@ -10,7 +10,9 @@ $ django-admin startproject mysite
 $ python manage.py startapp polls
 ```
 The directory structure will like this
-![](https://i.imgur.com/jtu4MkJ.jpg)
+
+
+![](https://i.imgur.com/jtu4MkJ.jpg =50%x)
 
 ---
 
