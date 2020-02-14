@@ -8,6 +8,4 @@ wincertstore==0.2
 gunicorn==19.9.0
 django-storages==1.9.1
 boto3==1.11.15
-requests==2.22.0
-beautifulsoup4==4.8.2
 psycopg2==2.8.4
