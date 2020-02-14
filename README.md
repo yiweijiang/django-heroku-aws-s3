@@ -2,15 +2,19 @@
 
 
 ## Creating a Django project & App
+
+[Github](https://github.com/yiweijiang/django-heroku-aws-s3)
+
 [django-tutorial](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)
 
 Follow this:
+
 ```
 $ django-admin startproject mysite
 $ python manage.py startapp polls
 ```
-The directory structure will like this
 
+The directory structure will like this
 
 ![](https://i.imgur.com/jtu4MkJ.jpg)
 
@@ -100,9 +104,8 @@ ALLOWED_HOSTS = ['*']
 web: gunicorn mysite.wsgi
 ```
 ### requirements.txt
-```
+>$ pip freeze > requirements.txt
 
-```
 ### runtime.txt
 ```
 python-3.6.10
