@@ -12,7 +12,7 @@ $ python manage.py startapp polls
 The directory structure will like this
 
 
-![](https://i.imgur.com/jtu4MkJ.jpg =50%x)
+![](https://i.imgur.com/jtu4MkJ.jpg)
 
 ---
 
@@ -126,7 +126,7 @@ You can see the link : https://***.herokuapp.com/index/
 ## Database
 The example use the [Heroku Postgres](https://elements.heroku.com/addons/heroku-postgresql)
 
-![](https://i.imgur.com/xpAK6Cr.jpg =40%x)
+![](https://i.imgur.com/xpAK6Cr.jpg)
 ```
 $ heroku config:set DATABASE_HOST=xxx
 $ heroku config:set DATABASE_NAME=xxx
