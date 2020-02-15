@@ -192,6 +192,7 @@ DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 ### views .py
 Add the function to views
+*The function can upload your file and save to your database*
 ```python=
 from django.shortcuts import render
 from .models import Image
@@ -224,3 +225,17 @@ $ heroku run python manage.py migrate --run-syncdb
 ```
 
 Now, you can try to upload file
+
+### Download file
+```python=
+import boto3
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
+
+s3 = boto3.client('s3',
+    aws_access_key_id=AWS_ACCESS_KEY_ID,
+    aws_secret_access_key= AWS_SECRET_ACCESS_KEY)
+with open('FileName', 'wb') as f:
+    s3.download_fileobj(AWS_STORAGE_BUCKET_NAME, 's3_FileName', f)
+```
