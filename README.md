@@ -102,8 +102,14 @@ ALLOWED_HOSTS = ['*']
 web: gunicorn mysite.wsgi
 ```
 ### requirements.txt
->$ pip freeze > requirements.txt
-
+```
+Django==2.2.10
+Pillow==7.0.0
+gunicorn==19.9.0
+django-storages==1.9.1
+boto3==1.11.15
+psycopg2==2.8.4
+```
 ### runtime.txt
 ```
 python-3.6.10
@@ -159,6 +165,11 @@ from django.db import models
 # Create your models here.
 class Image(models.Model):
     image = models.ImageField(upload_to='profile_pics')
+```
+Run this
+```
+$ heroku run python manage.py makemigrations 
+$ heroku run python manage.py migrate
 ```
 
 ---
